@@ -1,0 +1,47 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+h1 {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+}
+.wrapper-add-book {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 10px;
+}
+.bookshelf {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.book-card {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding: 20px;
+    margin: 30px;
+    border-style: solid;
+    border-color: orange;
+    border-width: 5px;
+    border-radius: 20px;
+}
+.formPopup {
+    display: none;
+    position: relative;
+}

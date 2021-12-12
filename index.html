@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Library</h1>
+        <div class="wrapper-add-book">
+            <button onclick="openForm()">New Book</button>
+        </div>
+        <div class="formPopup" id="popupForm">
+            <form>
+                <label for="title">Title:</label><br>
+                <input type='text' id='title' name='title'><br>
+                <label for="author">Author:</label><br>
+                <input type='text' id='author' name='author'><br>
+                <label for="page">Pages:</label><br>
+                <input type='text' id='pages' name='pages'><br>
+            </form>
+        </div>
+        <div class="bookshelf">
+
+        </div>
+    </div>
+</body>
+</html>
