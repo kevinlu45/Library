@@ -11,22 +11,29 @@
 <body>
     <div class="wrapper">
         <h1>Library</h1>
-        <div class="wrapper-add-book">
+        <!-- <div class="wrapper-add-book">
             <button onclick="openForm()">New Book</button>
-        </div>
-        <div class="formPopup" id="popupForm">
-            <form>
-                <label for="title">Title:</label><br>
+        </div> -->
+        <div class='lower-wrapper'>
+            <div>
+                Title:<br>
                 <input type='text' id='title' name='title'><br>
-                <label for="author">Author:</label><br>
+                Author:<br>
                 <input type='text' id='author' name='author'><br>
-                <label for="page">Pages:</label><br>
-                <input type='text' id='pages' name='pages'><br>
-            </form>
-        </div>
-        <div class="bookshelf">
+                Pages:<br>
+                <input type='text' id='pages' name='pages'><br><br>
+                <h3>Read?</h3>
+                <label class="switch">
+                    <input type="checkbox" id='isRead'>
+                    <span class="slider round"></span>
+                </label>
+                <br><br>
+                <button class='newBookButton'>Add Book</button>
+            </div>
+            <div class="bookshelf">
 
-        </div>
+            </div>
+        </div> 
     </div>
 </body>
 </html>
