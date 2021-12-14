@@ -36,6 +36,7 @@ function createBookCard(book){
         hasRead.style.backgroundColor = 'red';
     }
     hasRead.addEventListener('click', () => {
+        console.log(this.id);
         let index = myLibrary.indexOf(book);
         let button = document.getElementById('read-button'+index);
         console.log(button);
@@ -60,8 +61,16 @@ function createBookCard(book){
         console.log(children);
         for (let i = 0;i< children.length;i++){
             let childID = children[i].id;
-            console.log(childID);
             children[i].id = 'book-card'+i;
+            let buttons = children[i].querySelectorAll('button');
+            console.log(buttons);
+            for (let j = 0;j< buttons.length;j++){
+                if (j == 0){
+                    buttons[j].id = 'read-button'+i;
+                } else if (j == 1){
+                    buttons[j].id = 'removeButton'+i;
+                }
+            }
         }
     });
     book_card.appendChild(title);
